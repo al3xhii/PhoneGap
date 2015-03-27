@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="StudyQuiz.com">
+    <meta name="author" content="StudyQuiz">
+    <title>StudyQuiz - Junior Cert 1st Year Gaeilge Quiz</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+	<script src="js/quizconfig1.js">
+	</script>
+
+	<script>
+	/***********************************************
+	* JavaScriptKit.com Multiple Choice Quiz Script (http://www.javascriptkit.com)
+	* Copyright 2003 JavaScript Kit- http://www.javascriptkit.com
+	* This notice and footnote must stay intact for use
+	* Visit JavaScript Kit (http://www.javascriptkit.com/) for full source code
+	***********************************************/
+
+	var actualchoices=new Array()
+	document.cookie="ready=yes"
+	</script>
+	</head>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html"> <img src="images/Logo.png" alt ="StudyQuiz"/> </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-centre">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="leaderboards.html">Leaderboards</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign-Up <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Programme Co-Ordinator</li>
+                <li><a href="prog_co_login.html">Login </a></li>
+                <li><a href="prog_co_signup.html">Sign-Up</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Student</li>
+                <li><a href="student_login.html">Login </a></li>
+                <li><a href="student_signup.html">Sign-Up</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!--Comments on configuring quiz script-->
+<!--Change the questions below any way you want, but make note of the following:-->
+<!--1) Perserve the <FORM> tags -->
+<!--2a) Inside each radio button, use the VALUE attribute to denote each question's choices: "a", "b", "c" etc.-->
+<!--2b) Inside each radio button, use the NAME attribute to denote which question the button belongs to ("question1", "question2" etc-->
+<!--3) Script supports unlmited # of questions. Be sure to edit .js file to enter corresponding solutions-->
+<div class="qtitle">
+  Gaeilge
+</div>
+
+<form method="POST" name="myquiz">
+<div class="qheader">
+1) Ta se go deas bualadh ________.</div>
+<div class="qselections">
+<input type="radio" value="a" name="question1">a) leat<br>
+<input type="radio" value="b" name="question1">b) tu<br>
+<input type="radio" value="c" name="question1">c) roimhe<br>
+<input type="radio" value="d" name="question1">d) aici<br>
+</div>
+<br>
+<div class="qheader">
+2) Tá mé go maith, go raibh maith __________.</div>
+<div class="qselections">
+<input type="radio" value="a" name="question2">a)tú<br>
+<input type="radio" value="b" name="question2">b)leis<br>
+<input type="radio" value="c" name="question2">c)leat<br>
+<input type="radio" value="d" name="question2">d)agat<br>
+</div>
+<br>
+<div class="qheader">
+3) Tá mé i mo chónaí __________ gCorcaigh</div>
+<div class="qselections">
+<input type="radio" value="a" name="question3">a) sa<br>
+<input type="radio" value="b" name="question3">b) ag<br>
+<input type="radio" value="c" name="question3">c) i<br>
+<input type="radio" value="d" name="question3">d) le<br>
+</div>
+<br>
+<div class="qheader">
+4) Cé mhéad páiste atá agat? __________.</div>
+<div class="qselections">
+<input type="radio" value="a" name="question4">a) Iníonacha<br>
+<input type="radio" value="b" name="question4">b) Tá<br>
+<input type="radio" value="c" name="question4">c) Mo mhac<br>
+<input type="radio" value="d" name="question4">d) Triúr<br>
+</div>
+<br>
+<div class="qheader">
+5) An maith leat é? __________.</div>
+<div class="qselections">
+<input type="radio" value="a" name="question5">a) Is maith<br>
+<input type="radio" value="b" name="question5">b) Tá<br>
+<input type="radio" value="c" name="question5">c) Níl<br>
+<input type="radio" value="d" name="question5">d) Amárach<br>
+</div>
+<br>
+<div class="qheader">
+6) Tá an seomra __________ ansin ar chlé. </div>
+<div class="qselections">
+<input type="radio" value="a" name="question6">a) cistin<br>
+<input type="radio" value="b" name="question6">b) suí<br>
+<input type="radio" value="c" name="question6">c) cuisneoir<br>
+<input type="radio" value="d" name="question6">d) leithreas<br>
+</div>
+<br>
+<div class="qheader">
+7) Féachaim __________ an teilifís. </div>
+<div class="qselections">
+<input type="radio" value="a" name="question7">a) ag<br>
+<input type="radio" value="b" name="question7">b) as<br>
+<input type="radio" value="c" name="question7">c) leis<br>
+<input type="radio" value="d" name="question7">d) ar<br>
+</div>
+<br>
+<div class="qheader">
+8) Tá sé ceathrú __________ a dó dhéag.</div>
+<div class="qselections">
+<input type="radio" value="a" name="question8">a) leis<br>
+<input type="radio" value="b" name="question8">b) ag<br>
+<input type="radio" value="c" name="question8">c) ar<br>
+<input type="radio" value="d" name="question8">d) chun<br>
+</div>
+<br>
+<div class="qheader">
+9) Tá Fraincis mhaith __________. </div>
+<div class="qselections">
+<input type="radio" value="a" name="question9">a) liom<br>
+<input type="radio" value="b" name="question9">b) asam<br>
+<input type="radio" value="c" name="question9">c) orm<br>
+<input type="radio" value="d" name="question9">d) agam<br>
+</div>
+<br>
+<div class="qheader">
+10) Cén post atá __________? </div>
+<div class="qselections">
+<input type="radio" value="a" name="question10">a) leat<br>
+<input type="radio" value="b" name="question10">b) ort<br>
+<input type="radio" value="c" name="question10">c) agat<br>
+<input type="radio" value="d" name="question9">d) tú<br>
+</div>
+</form>
+<form>
+  <div class="qbutton">
+   <input type="button" value="Grade Me!" name="B1" onClick="gradeit()">
+   <input type="button" value="Reset" name="B2" onClick="document.myquiz.reset()">
+ </div>
+</form>
+    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <div class="navbar-text pull-left">
+                <p>© 2015 StudyQuiz</p>
+            </div>
+            <div class="navbar-text pull-right">
+                <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                <a href="#"><i class="fa fa-youtube-square fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

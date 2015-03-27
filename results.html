@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="StudyQuiz.com">
+    <meta name="author" content="StudyQuiz">
+    <title>StudyQuiz - Quiz 1 Results</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html"> <img src="images/Logo.png" alt ="StudyQuiz"/> </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-centre">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="leaderboards.html">Leaderboards</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign-Up <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Programme Co-Ordinator</li>
+                <li><a href="prog_co_login.html">Login </a></li>
+                <li><a href="prog_co_signup.html">Sign-Up</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Student</li>
+                <li><a href="student_login.html">Login </a></li>
+                <li><a href="student_signup.html">Sign-Up</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<script src="quizconfig1.js">
+</script>
+
+<big>Quiz Results</big></font></strong></p>
+<div align="center"><center>
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%"><form method="POST" name="result"><table border="0" width="100%" cellpadding="0" height="116">
+        <tr>
+          <td height="25">Questions you got right</td>
+          <td height="25"><p><input type="text" name="p" size="24"></td>
+        </tr>
+        <tr>
+          <td height="17">Questions you got wrong</td>
+          <td height="17"><p><textarea name="T2" rows="3" cols="24" wrap="virtual"></textarea></td>
+        </tr>
+        <tr>
+          <td height="25">Grade</td>
+          <td height="25"><input type="text" name="q" size="8"></td>
+        </tr>
+      </table>
+    </form>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<form method="POST"><div
+  align="center"><center><p>
+
+<script>
+var wrong=0
+for (e=0;e<=2;e++)
+document.result[e].value=""
+
+var results=document.cookie.split(";")
+for (n=0;n<=results.length-1;n++){
+if (results[n].charAt(1)=='q')
+parse=n
+
+}
+
+var incorrect=results[parse].split("=")
+incorrect=incorrect[1].split("/")
+if (incorrect[incorrect.length-1]=='b')
+incorrect=""
+document.result[0].value=totalquestions-incorrect.length+" out of "+totalquestions
+document.result[2].value=(totalquestions-incorrect.length)/totalquestions*100+"%"
+for (temp=0;temp<incorrect.length;temp++)
+document.result[1].value+=incorrect[temp]+", "
+
+
+</script>
+
+<input type="button" value="Take the quiz again" name="B1"
+  onClick="history.go(-1)"> <input type="button" value="View solution" name="B2"
+  onClick="showsolution()"></p>
+  </center></div>
+</form>
+
+<p id="footnote" align="center"><font face="arial" size="-1">Quiz script provided by<br>
+<a href="http://www.javascriptkit.com">JavaScriptKit.com</a></font></p>
+</body>
+</html>

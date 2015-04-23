@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="StudyQuiz.com">
     <meta name="author" content="StudyQuiz">
-    <title>StudyQuiz - Junior Cert 1st Year Geography Quiz</title>
+    <title>StudyQuiz - Junior Cert 1st Year Math Quiz</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
@@ -14,7 +14,7 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
-	<script src="js/quizconfig3.js">
+	<script src="quizconfig3.js">
 	</script>
 
 	<script>
@@ -39,25 +39,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="index.html"> <img src="images/Logo.png" alt ="StudyQuiz"/> </a>
+          <a href="index.php"> <img src="images/Logo.png" alt ="StudyQuiz"/> </a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-centre">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
             <li><a href="leaderboards.html">Leaderboards</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign-Up <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quizzes <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="dropdown-header">Programme Co-Ordinator</li>
-                <li><a href="prog_co_login.html">Login </a></li>
-                <li><a href="prog_co_signup.html">Sign-Up</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Student</li>
-                <li><a href="student_login.html">Login </a></li>
-                <li><a href="student_signup.html">Sign-Up</a></li>
+                <li><a href="quiz3.html">History </a></li>
+                <li><a href="quiz1.html">Geography</a></li>
+                <li><a href="quiz2.html">Science</a></li>
               </ul>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+
           </ul>
         </div>
       </div>
@@ -70,103 +66,112 @@
 <!--2b) Inside each radio button, use the NAME attribute to denote which question the button belongs to ("question1", "question2" etc-->
 <!--3) Script supports unlmited # of questions. Be sure to edit .js file to enter corresponding solutions-->
 <div class="qtitle">
-  Geography
+  <h1>History</h1><br/>
+World War I (WWI or WW1), also known as the First World War or the Great War, was a global war mostly centered in Europe that began on 28 July 1914 and lasted until 11 November 1918. More than 9 million combatants and 7 million civilians died as a result of the war, a casualty rate exacerbated by the belligerents' technological and industrial sophistication, and tactical stalemate. It was one of the deadliest conflicts in history, paving the way for major political changes, including revolutions in many of the nations involved. 
+The war drew in all the world's economic great powers, which were assembled in two opposing alliances: the Allies (based on the Triple Entente of the United Kingdom, France and the Russian Empire) and the Central Powers of Germany and Austria-Hungary. Although Italy had also been a member of the Triple Alliance alongside Germany and Austria-Hungary, it did not join the Central Powers, as Austria-Hungary had taken the offensive against the terms of the alliance. These alliances were reorganised and expanded as more nations entered the war: Italy, Japan and the United States joined the Allies, and the Ottoman Empire and Bulgaria the Central Powers. Ultimately, more than 70 million military personnel, including 60 million Europeans, were mobilised in one of the largest wars in history. 
+The immediate trigger for war was the 28 June 1914 assassination of Archduke Franz Ferdinand of Austria, heir to the throne of Austria-Hungary, by Yugoslav nationalist Gavrilo Princip in Sarajevo. This set off a diplomatic crisis when Austria-Hungary delivered an ultimatum to the Kingdom of Serbia, and entangled international alliances formed over the previous decades were invoked. Within weeks, the major powers were at war and the conflict soon spread around the world.
+On 28 July, the Austro-Hungarians declared war on Serbia and subsequently invaded. As Russia mobilised in support of Serbia, Germany invaded neutral Belgium and Luxembourg before moving towards France, leading Britain to declare war on Germany. After the German march on Paris was halted, what became known as the Western Front settled into a battle of attrition, with a trench line that would change little until 1917. Meanwhile, on the Eastern Front, the Russian army was successful against the Austro-Hungarians, but was stopped in its invasion of East Prussia by the Germans. In November 1914, the Ottoman Empire joined the Central Powers, opening fronts in the Caucasus, Mesopotamia and the Sinai. Italy joined the Allies in 1915 and Bulgaria joined the Central Powers in the same year, while Romania joined the Allies in 1916, and the United States joined the Allies in 1917.
+The Russian government collapsed in March 1917, and a subsequent revolution in November brought the Russians to terms with the Central Powers via the Treaty of Brest Litovsk, which constituted a massive German victory until nullified by the 1918 victory of the Western allies. After a stunning Spring 1918 German offensive along the Western Front, the Allies rallied and drove back the Germans in a series of successful offensives. On 4 November 1918, the Austro-Hungarian empire agreed to an armistice, and Germany, which had its own trouble with revolutionaries, agreed to an armistice on 11 November 1918, ending the war in victory for the Allies.
+By the end of the war, four major imperial powers—the German, Russian, Austro-Hungarian and Ottoman empires—ceased to exist. The maps were redrawn, with several independent nations restored or created and Germany's colonies were parceled out among the winners. During the Paris Peace conference of 1919, The Big Four (Britain, France, United States, and Italy) imposed their terms in a series of treaties. The League of Nations was formed with the aim of preventing any repetition of such an appalling conflict. This aim, however, failed with weakened states, economic depression, renewed European nationalism, and the German feeling of humiliation contributing to the rise of nazism. These conditions eventually contributed to World War II.
+
+  <hr/>
+	<h1>Quiz</h1>
 </div>
 
 <form method="POST" name="myquiz">
 <div class="qheader">
-1) What type of seismic activity happens in an earthquake?</div>
+1) Where was the armistice signed after the end of the war?</div>
 <div class="qselections">
-<input type="radio" value="a" name="question1">a) shocks<br>
-<input type="radio" value="b" name="question1">b) rays<br>
-<input type="radio" value="c" name="question1">c) waves<br>
-<input type="radio" value="d" name="question1">d) bounces<br>
+<input type="radio" value="a" name="question1">a) Railway<br>
+<input type="radio" value="b" name="question1">b) Compiegne<br>
+<input type="radio" value="c" name="question1">c) Railway carriage at compiegne<br>
+<input type="radio" value="d" name="question1">d) Carriage at compiegne<br>
 </div>
 <br>
 <div class="qheader">
-2) What event can happen when an underwater earthquake shakes the ocean floor?</div>
+2) Who commanded the British fleet at the Battle of Jutland?</div>
 <div class="qselections">
-<input type="radio" value="a" name="question2">a) the tide<br>
-<input type="radio" value="b" name="question2">b) tsunami<br>
-<input type="radio" value="c" name="question2">c) a waterspout<br>
-<input type="radio" value="d" name="question2">d) an epicentre<br>
+<input type="radio" value="a" name="question2">a) Jellicoe<br>
+<input type="radio" value="b" name="question2">b) John Jellicoe<br>
+<input type="radio" value="c" name="question2">c) Smith Jellicoe<br>
+<input type="radio" value="d" name="question2">d) Brian Jellicoe<br>
 </div>
 <br>
 <div class="qheader">
-3) What instrument would you use to measure how big an earthquake is?</div>
+3) At which battle were the tanks first used?</div>
 <div class="qselections">
-<input type="radio" value="a" name="question3">a) calculator<br>
-<input type="radio" value="b" name="question3">b) spectrometer<br>
-<input type="radio" value="c" name="question3">c) seismograph or seismometer<br>
-<input type="radio" value="d" name="question3">d) abacus<br>
+<input type="radio" value="a" name="question3">a) Somme,1678<br>
+<input type="radio" value="b" name="question3">b) Somme,1865<br>
+<input type="radio" value="c" name="question3">c) Somme,1916<br>
+<input type="radio" value="d" name="question3">d) Somme,1954<br>
 </div>
 <br>
 <div class="qheader">
-4) In what type of fault do two plates move apart?</div>
+4) Which British liner did a German U ? boat sink on May 5th 1915?</div>
 <div class="qselections">
-<input type="radio" value="a" name="question4">a) fracture<br>
-<input type="radio" value="b" name="question4">b) normal<br>
-<input type="radio" value="c" name="question4">c) reverse<br>
-<input type="radio" value="d" name="question4">d) strike-slip<br>
+<input type="radio" value="a" name="question4">a) France<br>
+<input type="radio" value="b" name="question4">b) Lusitania<br>
+<input type="radio" value="c" name="question4">c) Italy<br>
+<input type="radio" value="d" name="question4">d) England<br>
 </div>
 <br>
 <div class="qheader">
-5) What does subduction involve?</div>
+5) Which French hero of World War I was tried for treason after World War II?</div>
 <div class="qselections">
-<input type="radio" value="a" name="question5">a) One plate crashing into a second plate. The f<br>
-<input type="radio" value="b" name="question5">b) Two plates dividing into smaller pieces.<br>
-<input type="radio" value="c" name="question5">c) Two plates colliding and crumpling up into fo<br>
-<input type="radio" value="d" name="question5">d) Two plates rubbing past each other in differe<br>
+<input type="radio" value="a" name="question5">a) Petain<br>
+<input type="radio" value="b" name="question5">b) Pert<br>
+<input type="radio" value="c" name="question5">c) Pat<br>
+<input type="radio" value="d" name="question5">d) Paul<br>
 </div>
 <br>
 <div class="qheader">
-6) What is a dangerous event that is likely to occur on the side of a mountain during an earthquake?</div>
+6) Which German Military leader of World War I became President of Germany in 1925?</div>
 <div class="qselections">
-<input type="radio" value="a" name="question6">a) liquefaction<br>
-<input type="radio" value="b" name="question6">b) subsidence<br>
-<input type="radio" value="c" name="question6">c) tsunami<br>
-<input type="radio" value="d" name="question6">d) landslide<br>
+<input type="radio" value="a" name="question6">a) Pat Von Hindenburg<br>
+<input type="radio" value="b" name="question6">b) Brian Von Hindenburg<br>
+<input type="radio" value="c" name="question6">c) Paul Paul Von Hindenburg <br>
+<input type="radio" value="d" name="question6">d) Paul Von Hindenburg<br>
 </div>
 <br>
 <div class="qheader">
-7) What do you call small tremors that follow a big earthquake? </div>
+7) Where was the German fleet scuttled in 1919?</div>
 <div class="qselections">
-<input type="radio" value="a" name="question7">a) tectonic plates<br>
-<input type="radio" value="b" name="question7">b) aftershocks<br>
-<input type="radio" value="c" name="question7">c) eruptions<br>
-<input type="radio" value="d" name="question7">d) P waves<br>
+<input type="radio" value="a" name="question7">a) Scapa Draw<br>
+<input type="radio" value="b" name="question7">b) Scapa Flow<br>
+<input type="radio" value="c" name="question7">c) Scapa Low<br>
+<input type="radio" value="d" name="question7">d) Scapa Raw<br>
 </div>
 <br>
 <div class="qheader">
-8) What is the best scale to measure an earthquake?</div>
+8) Who became German chief of staff in 1916 , directing the German war effort alongside Hindenburg?</div>
 <div class="qselections">
-<input type="radio" value="a" name="question8">a) the Richter scale<br>
-<input type="radio" value="b" name="question8">b) a manual scale<br>
-<input type="radio" value="c" name="question8">c) the geological time scale<br>
-<input type="radio" value="d" name="question8">d) the Mercalli Intensity scale<br>
+<input type="radio" value="a" name="question8">a) Liam Ludendorff<br>
+<input type="radio" value="b" name="question8">b) Rayan Ludendorff<br>
+<input type="radio" value="c" name="question8">c) John Ludendorff<br>
+<input type="radio" value="d" name="question8">d) Eric Ludendorff<br>
 </div>
 <br>
 <div class="qheader">
-9) The three types of boundaries between the Earth's plates are what?</div>
+9) At which battle was poison gas first used?</div>
 <div class="qselections">
-<input type="radio" value="a" name="question9">a) rift valley, ocean ridge, and fault<br>
-<input type="radio" value="b" name="question9">b) divergent, convergent, and transform<br>
-<input type="radio" value="c" name="question9">c) seafloor, lithosphere, and seabed<br>
-<input type="radio" value="d" name="question9">d) continent, trench, and magnetic field<br>
+<input type="radio" value="a" name="question9">a) Ypres, 1915<br>
+<input type="radio" value="b" name="question9">b) Ypres, 1876<br>
+<input type="radio" value="c" name="question9">c) Ypres, 1789<br>
+<input type="radio" value="d" name="question9">d) Ypres, 1890<br>
 </div>
 <br>
 <div class="qheader">
-10) What is a major fault in California? </div>
+10) Which French general dictated the term of allied victory (World War I)?</div>
 <div class="qselections">
-<input type="radio" value="a" name="question10">a) the San Andreas fault<br>
-<input type="radio" value="b" name="question10">b) the New Madrid fault<br>
-<input type="radio" value="c" name="question10">c) the Deseado fault<br>
-<input type="radio" value="d" name="question9">d) the Magallanes fault<br>
+<input type="radio" value="a" name="question10">a) Ferdinand Foch<br>
+<input type="radio" value="b" name="question10">b) Ferdinand<br>
+<input type="radio" value="c" name="question10">c) Foch<br>
+<input type="radio" value="d" name="question9">d) Ferdinand Foche<br>
 </div>
 </form>
 <form>
   <div class="qbutton">
-   <input type="button" value="Grade Me!" name="B1" onClick=location.href="results.html">
+   <input type="button" value="Grade Me!" name="B1" onClick="gradeit()">
    <input type="button" value="Reset" name="B2" onClick="document.myquiz.reset()">
  </div>
 </form>

@@ -110,10 +110,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .qtitle {
 	text-align: center;
-	font-size: x-large;
+	font-size: medium;
 }
 .qheader,
 .qselections,
 .qbutton {
-	text-align: center;
+	margin-left: 50px;
+	text-align: left;
 }

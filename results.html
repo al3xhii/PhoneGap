@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,49 +26,44 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="index.html"> <img src="images/Logo.png" alt ="StudyQuiz"/> </a>
+          <a href="index.php"> <img src="images/Logo.png" alt ="StudyQuiz"/> </a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-centre">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
             <li><a href="leaderboards.html">Leaderboards</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign-Up <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quizzes <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="dropdown-header">Programme Co-Ordinator</li>
-                <li><a href="prog_co_login.html">Login </a></li>
-                <li><a href="prog_co_signup.html">Sign-Up</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Student</li>
-                <li><a href="student_login.html">Login </a></li>
-                <li><a href="student_signup.html">Sign-Up</a></li>
+                <li><a href="quiz3.html">History </a></li>
+                <li><a href="quiz1.html">Geography</a></li>
+                <li><a href="quiz2.html">Science</a></li>
               </ul>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+
           </ul>
         </div>
       </div>
     </div>
 
-<script src="quizconfig1.js">
+<script src="quizconfig.js">
 </script>
 
-<big>Quiz Results</big></font></strong></p>
 <div align="center"><center>
 
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="100%"><form method="POST" name="result"><table border="0" width="100%" cellpadding="0" height="116">
         <tr>
-          <td height="25">Questions you got right</td>
+          <td height="25" bgcolor="#D3FFA8"><strong><font face="Arial"># of questions you got right:</font></strong></td>
           <td height="25"><p><input type="text" name="p" size="24"></td>
         </tr>
         <tr>
-          <td height="17">Questions you got wrong</td>
+          <td height="17" bgcolor="#D3FFA8"><strong><font face="Arial">The questions you got wrong:</font></strong></td>
           <td height="17"><p><textarea name="T2" rows="3" cols="24" wrap="virtual"></textarea></td>
         </tr>
         <tr>
-          <td height="25">Grade</td>
+          <td height="25" bgcolor="#D3FFA8"><strong><font face="Arial">Your Score:</font></strong></td>
           <td height="25"><input type="text" name="q" size="8"></td>
         </tr>
       </table>
@@ -97,20 +93,20 @@ incorrect=incorrect[1].split("/")
 if (incorrect[incorrect.length-1]=='b')
 incorrect=""
 document.result[0].value=totalquestions-incorrect.length+" out of "+totalquestions
-document.result[2].value=(totalquestions-incorrect.length)/totalquestions*100+"%"
+document.result[2].value=(totalquestions-incorrect.length)*100
 for (temp=0;temp<incorrect.length;temp++)
 document.result[1].value+=incorrect[temp]+", "
 
 
 </script>
 
-<input type="button" value="Take the quiz again" name="B1"
-  onClick="history.go(-1)"> <input type="button" value="View solution" name="B2"
+ <input type="button" value="View solution" name="B2"
   onClick="showsolution()"></p>
   </center></div>
 </form>
 
-<p id="footnote" align="center"><font face="arial" size="-1">Quiz script provided by<br>
-<a href="http://www.javascriptkit.com">JavaScriptKit.com</a></font></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
